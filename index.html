@@ -10,12 +10,22 @@
   </head>
   <body>
     <header>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#fun-fact">Fun Fact</a></li>
+          <li><a href="#weather">Weather</a></li>
+        </ul>
+      </nav>
       <h1>Welcome to Arjun's Website</h1>
     </header>
     
     <main>
-      <section class="about-me">
-        <img src="./images/profile.jpg" alt="Arjun Hegde" class="profile-image">
+      <section id="about" class="about-me">
+        <figure>
+          <img src="./images/profile.jpg" alt="Arjun Hegde" class="profile-image">
+          <figcaption>Arjun Hegde</figcaption>
+        </figure>
         <article class="bio">
           <h2>About Me</h2>
           <p>Hello! I'm Arjun, a student at Cornell Tech. I'm passionate about technology 
@@ -24,18 +34,18 @@
         </article>
       </section>
 
-      <section class="fun-fact">
+      <section id="fun-fact" class="fun-fact">
         <details>
           <summary>Click to see a fun fact about me!</summary>
           <p>I can solve a Rubik's cube in under 2 minutes!</p>
         </details>
       </section>
 
-      <section class="weather-widget">
-        <h2>Current Weather</h2>
-        <div id="weather-data">
-          Loading weather data...
-        </div>
+      <section id="weather" class="weather-widget">
+        <h2>NASA Astronomy Picture of the Day</h2>
+        <aside id="weather-data">
+          Loading NASA image...
+        </aside>
       </section>
     </main>
 
