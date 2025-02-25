@@ -9,9 +9,40 @@
     <link rel="icon" href="./favicon.ico" type="image/x-icon">
   </head>
   <body>
+    <header>
+      <h1>Welcome to Arjun's Website</h1>
+    </header>
+    
     <main>
-        <h1>Welcome to Arjun's New Beginning Website</h1>  
+      <section class="about-me">
+        <img src="./images/profile.jpg" alt="Arjun Hegde" class="profile-image">
+        <article class="bio">
+          <h2>About Me</h2>
+          <p>Hello! I'm Arjun, a student at Cornell Tech. I'm passionate about technology 
+             and building things that make a difference. When I'm not coding, you can 
+             find me exploring New York City or reading tech blogs.</p>
+        </article>
+      </section>
+
+      <section class="fun-fact">
+        <details>
+          <summary>Click to see a fun fact about me!</summary>
+          <p>I can solve a Rubik's cube in under 2 minutes!</p>
+        </details>
+      </section>
+
+      <section class="weather-widget">
+        <h2>Current Weather</h2>
+        <div id="weather-data">
+          Loading weather data...
+        </div>
+      </section>
     </main>
-	<script src="index.js"></script>
+
+    <footer>
+      <p>© 2024 Arjun Hegde</p>
+    </footer>
+
+    <script src="index.js"></script>
   </body>
 </html>

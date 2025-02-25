@@ -1,0 +1,77 @@
+/* Base styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Grid layout for the main content */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+/* About me section */
+.about-me {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  /* Using a CSS property we haven't discussed: filter */
+  filter: drop-shadow(0 0 10px rgba(0,0,0,0.2));
+}
+
+/* Fun fact section using details element */
+.fun-fact {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+details {
+  cursor: pointer;
+}
+
+summary {
+  padding: 1rem;
+  background-color: #eee;
+  border-radius: 4px;
+}
+
+/* Weather widget */
+.weather-widget {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #f0f0f0;
+  margin-top: 2rem;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+} 
