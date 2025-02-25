@@ -8,7 +8,6 @@ body {
 /* Grid layout for the main content */
 main {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
   padding: 2rem;
   max-width: 1200px;
@@ -29,6 +28,7 @@ header {
   gap: 2rem;
   padding: 1rem;
   text-align: center;
+  grid-column: 1 / -1;
 }
 
 .profile-image {
@@ -54,6 +54,7 @@ header {
   background-color: #f9f9f9;
   padding: 1rem;
   border-radius: 8px;
+  margin: 0;
 }
 
 details {
@@ -71,6 +72,7 @@ summary {
   background-color: #f0f0f0;
   padding: 1rem;
   border-radius: 8px;
+  margin: 0;
 }
 
 .weather-widget img {
@@ -97,9 +99,44 @@ footer {
   margin-top: 2rem;
 }
 
+/* Add a flex container for the bottom sections */
+section.fun-fact + section.weather-widget {
+  display: flex;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Make both sections take equal width */
+.fun-fact, .weather-widget {
+  flex: 1;
+}
+
 /* Responsive design */
-@media (max-width: 600px) {
-  main {
-    grid-template-columns: 1fr;
+@media (max-width: 768px) {
+  section.fun-fact + section.weather-widget {
+    flex-direction: column;
   }
+}
+
+/* Navigation styling */
+nav.nav-links {
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #0066cc;
+}
+
+.nav-links .divider {
+  color: #666;
+  margin: 0 0.5rem;
 } 
