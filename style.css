@@ -1,8 +1,47 @@
 /* Base styles */
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #F7F7F7;
+}
+
+header {
+    text-align: center;
+    padding: 2rem;
+    background-color: #B31B1B;
+    color: #FFFFFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: #FFFFFF;
+}
+
+.nav-links {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+    border-radius: 4px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255,255,255,0.1);
+}
+
+.nav-links .divider {
+    color: rgba(255,255,255,0.7);
+    margin: 0 0.5rem;
 }
 
 /* Grid layout for the main content */
@@ -12,12 +51,6 @@ main {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
-}
-
-header {
-  text-align: center;
-  padding: 2rem;
-  background-color: #f0f0f0;
 }
 
 /* About me section */
@@ -118,29 +151,6 @@ footer {
   section.fun-fact + section.joke-widget {
     flex-direction: column;
   }
-}
-
-/* Navigation styling */
-nav.nav-links {
-  padding: 1rem 0;
-  text-align: center;
-}
-
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 500;
-  padding: 0 1rem;
-  transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-  color: #0066cc;
-}
-
-.nav-links .divider {
-  color: #666;
-  margin: 0 0.5rem;
 }
 
 /* Update navigation link */
