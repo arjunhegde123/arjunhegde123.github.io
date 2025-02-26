@@ -6,6 +6,7 @@ body {
     background-color: #F7F7F7;
 }
 
+/* Header styling */
 header {
     background-color: #B31B1B;
     color: #FFFFFF;
@@ -14,6 +15,8 @@ header {
     top: 0;
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .header-content {
@@ -22,6 +25,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
 .site-title {
@@ -30,6 +34,7 @@ header {
     font-size: 1.5rem;
     font-weight: 500;
     transition: opacity 0.3s ease;
+    padding: 0.5rem 0;
 }
 
 .site-title:hover {
@@ -49,9 +54,11 @@ header {
     padding: 0.5rem 1rem;
     transition: all 0.3s ease;
     border-radius: 4px;
+    white-space: nowrap;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a.active {
     background-color: rgba(255,255,255,0.1);
 }
 
@@ -161,17 +168,21 @@ footer {
   margin-top: 2rem;
 }
 
-/* Responsive design */
+/* Make sure header is responsive */
 @media (max-width: 768px) {
-  .header-content {
-    flex-direction: column;
-    gap: 1rem;
-    padding: 1rem 0;
-  }
-  
-  .nav-links {
-    justify-content: center;
-  }
+    header {
+        padding: 1rem;
+    }
+
+    .header-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
 }
 
 /* Update navigation link */
