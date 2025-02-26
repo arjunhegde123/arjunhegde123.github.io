@@ -68,7 +68,7 @@ summary {
 }
 
 /* Weather widget - renamed to joke widget */
-.weather-widget {
+.joke-widget {
   background-color: #f0f0f0;
   padding: 1.5rem;
   border-radius: 8px;
@@ -79,7 +79,7 @@ summary {
   text-align: center;
 }
 
-.weather-widget img {
+.joke-widget img {
   max-width: 100%;
   border-radius: 4px;
   margin-bottom: 1rem;
@@ -115,7 +115,7 @@ footer {
 
 /* Responsive design */
 @media (max-width: 768px) {
-  section.fun-fact + section.weather-widget {
+  section.fun-fact + section.joke-widget {
     flex-direction: column;
   }
 }
@@ -141,4 +141,9 @@ nav.nav-links {
 .nav-links .divider {
   color: #666;
   margin: 0 0.5rem;
+}
+
+/* Update navigation link */
+nav.nav-links a[href="#weather"] {
+  href: "#dad-joke";
 } 

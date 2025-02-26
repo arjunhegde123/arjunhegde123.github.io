@@ -9,14 +9,14 @@ async function getDadJoke() {
     });
     const data = await response.json();
     
-    const jokeDiv = document.getElementById('weather-data');
+    const jokeDiv = document.getElementById('joke-content');
     jokeDiv.innerHTML = `
       <p class="joke">${data.joke}</p>
       <button onclick="getDadJoke()" class="refresh-btn">Get Another Joke</button>
     `;
   } catch (error) {
     console.error('Error fetching dad joke:', error);
-    const jokeDiv = document.getElementById('weather-data');
+    const jokeDiv = document.getElementById('joke-content');
     jokeDiv.innerHTML = 'Unable to load dad joke';
   }
 }
