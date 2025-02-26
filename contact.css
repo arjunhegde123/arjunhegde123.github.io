@@ -1,0 +1,80 @@
+.contact-container {
+    max-width: 800px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.contact-container h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+    color: #222222;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #222222;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.contact-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    margin-right: 1.5rem;
+    width: 2rem;
+    text-align: center;
+}
+
+.contact-item span {
+    font-size: 1.1rem;
+}
+
+.contact-detail {
+    margin-left: auto;
+    color: #666;
+}
+
+/* Social media specific colors */
+.linkedin i {
+    color: #0077b5;
+}
+
+.email i {
+    color: #B31B1B;  /* Cornell Red */
+}
+
+.instagram i {
+    color: #E4405F;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .contact-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 0.5rem;
+    }
+
+    .contact-item i {
+        margin: 0 0 0.5rem 0;
+    }
+
+    .contact-detail {
+        margin: 0.5rem 0 0 0;
+    }
+} 
