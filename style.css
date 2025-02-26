@@ -199,4 +199,24 @@ nav.nav-links a[href="#weather"] {
   margin-bottom: 2rem;
   font-size: 2.5rem;
   color: #222222;
+}
+
+/* Mouse follower effect */
+.mouse-follower {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: rgba(179, 27, 27, 0.3); /* Cornell red with transparency */
+    border-radius: 50%;
+    pointer-events: none;
+    transition: transform 0.1s ease;
+    z-index: 9999;
+    backdrop-filter: blur(2px);
+    display: none; /* Hidden by default, shown on desktop */
+}
+
+@media (min-width: 768px) {
+    .mouse-follower {
+        display: block;
+    }
 } 

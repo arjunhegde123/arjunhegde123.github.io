@@ -23,3 +23,20 @@ async function getDadJoke() {
 
 // Call the function when page loads
 getDadJoke();
+
+// Mouse follower effect
+document.addEventListener('mousemove', (e) => {
+    const follower = document.getElementById('mouse-follower');
+    if (follower) {
+        follower.style.left = e.clientX - 10 + 'px';
+        follower.style.top = e.clientY - 10 + 'px';
+        
+        // Scale effect near clickable elements
+        const hoveredElement = document.elementFromPoint(e.clientX, e.clientY);
+        if (hoveredElement && (hoveredElement.tagName === 'A' || hoveredElement.tagName === 'BUTTON')) {
+            follower.style.transform = 'scale(2)';
+        } else {
+            follower.style.transform = 'scale(1)';
+        }
+    }
+});
