@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>Arjun Hegde - Resume</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./resume.css">
+</head>
+<body>
+    <header>
+        <h1>Arjun Hegde</h1>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <span class="divider">|</span>
+            <a href="#" class="active">Resume</a>
+        </nav>
+    </header>
+
+    <main class="resume-container">
+        <div class="resume-controls">
+            <div class="version-switch">
+                <button onclick="switchResume('tech')" class="version-btn active" id="tech-btn">Tech Resume</button>
+                <button onclick="switchResume('business')" class="version-btn" id="business-btn">Business Resume</button>
+            </div>
+            <div class="download-options">
+                <a href="./assets/ArjunHegdeTechnicalResume_Quant.pdf" class="download-btn" id="tech-download" download>Download Tech Resume</a>
+                <a href="./assets/ArjunHegde_BusinessResume.pdf" class="download-btn hidden" id="business-download" download>Download Business Resume</a>
+            </div>
+        </div>
+
+        <div class="resume-preview" id="tech-resume">
+            <!-- Embed tech resume PDF -->
+            <iframe src="./assets/ArjunHegdeTechnicalResume_Quant.pdf" title="Tech Resume"></iframe>
+        </div>
+
+        <div class="resume-preview hidden" id="business-resume">
+            <!-- Embed business resume PDF -->
+            <iframe src="./assets/ArjunHegde_BusinessResume.pdf" title="Business Resume"></iframe>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Arjun Hegde</p>
+    </footer>
+
+    <script src="resume.js"></script>
+</body>
+</html> 
