@@ -148,17 +148,21 @@ summary {
 }
 
 .refresh-btn {
-  background-color: #0066cc;
+  background-color: #B31B1B;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin-top: 1rem;
 }
 
 .refresh-btn:hover {
-  background-color: #0052a3;
+  background-color: #8B1515;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 footer {
