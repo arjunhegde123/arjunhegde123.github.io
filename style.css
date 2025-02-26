@@ -67,29 +67,43 @@ summary {
   border-radius: 4px;
 }
 
-/* Weather widget */
+/* Weather widget - renamed to joke widget */
 .weather-widget {
   background-color: #f0f0f0;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 8px;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .weather-widget img {
   max-width: 100%;
-  height: auto;
   border-radius: 4px;
   margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-.weather-widget p {
-  margin-bottom: 1rem;
-  line-height: 1.6;
+.joke {
+  font-size: 1.1em;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
 }
 
-.weather-widget p:first-of-type {
-  font-weight: bold;
-  font-size: 1.2em;
+.refresh-btn {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.refresh-btn:hover {
+  background-color: #0052a3;
 }
 
 footer {
@@ -97,18 +111,6 @@ footer {
   padding: 1rem;
   background-color: #f0f0f0;
   margin-top: 2rem;
-}
-
-/* Add a flex container for the bottom sections */
-section.fun-fact + section.weather-widget {
-  display: flex;
-  gap: 2rem;
-  width: 100%;
-}
-
-/* Make both sections take equal width */
-.fun-fact, .weather-widget {
-  flex: 1;
 }
 
 /* Responsive design */
